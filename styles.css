@@ -20,7 +20,7 @@ body.dark-mode {
 
 /* Header Styles */
 header {
-    background-color: #000000; /* Changed from #00cc00 to black */
+    background-color: #000000;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -56,12 +56,12 @@ header h1 {
     margin: 2rem auto;
     padding: 0 1rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
     gap: 2rem;
 }
 
 .featured-section {
-    grid-column: 1 / -1;
+    grid-column: 1 / -1; /* Full width for featured items */
     display: flex;
     justify-content: center;
 }
@@ -99,7 +99,6 @@ body.dark-mode .featured-scripture p {
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
     width: 100%;
-    max-width: 350px;
 }
 
 body.dark-mode .card {
@@ -197,4 +196,17 @@ footer {
 
 body.dark-mode footer {
     background-color: #004d00;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr; /* 1 column on phones */
+    }
 }
