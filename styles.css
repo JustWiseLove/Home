@@ -31,13 +31,13 @@ header {
 }
 
 header h1 {
-    color: #ffd700;
+    color: #ffd800;
     font-size: 2rem;
 }
 
 .mode-toggle {
     padding: 0.5rem 1rem;
-    background-color: #ffd700;
+    background-color: #ffd800;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -112,7 +112,7 @@ body.dark-mode .card {
 
 .card.featured {
     max-width: 600px;
-    border: 2px solid #ffd700;
+    border: 2px solid #ffd800;
 }
 
 .card-header {
@@ -126,7 +126,7 @@ body.dark-mode .card {
 }
 
 .card.featured .card-header {
-    background-color: #ffd700;
+    background-color: #ffd800;
     color: #000000;
 }
 
@@ -173,7 +173,7 @@ body.dark-mode .card-content .scripture {
 }
 
 .card-content a:hover {
-    color: #ffd700;
+    color: #ffd800;
 }
 
 /* Remove Details Arrows */
@@ -189,13 +189,13 @@ details summary {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #ffd700;
+    background-color: #ffd800;
     color: #000000;
     margin-top: 2rem;
 }
 
 body.dark-mode footer {
-    background-color: #004d00;
+    background-color: #ffd800;
 }
 
 /* Responsive Adjustments */
